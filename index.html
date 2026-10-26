@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ta">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Palanivel Manickam — Personal website in Tamil and English.">
+  <title>Palanivel Manickam | Personal Website</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#111a2e;--text:#f5f7fb;--muted:#b5bfd2;--accent:#79e0c3;--accent2:#8eb5ff;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Tamil",Segoe UI,sans-serif;background:radial-gradient(circle at 85% 10%,#1a3151 0,transparent 32%),linear-gradient(140deg,#090e1b,#101827 60%,#0b1222);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:16px}.brand{font-weight:800;letter-spacing:.2px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:22px;align-items:center;color:var(--muted);font-size:.95rem}.navlinks a:hover{color:var(--accent)}.lang{border:1px solid var(--line);background:#ffffff0a;color:var(--text);border-radius:999px;padding:8px 12px;cursor:pointer}
+    .hero{display:grid;grid-template-columns:1.35fr .65fr;gap:44px;align-items:center;padding:82px 0 90px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}.hero h1{font-size:clamp(2.6rem,6vw,5.2rem);line-height:1.05;letter-spacing:-2px;margin:14px 0 20px}.hero h1 span{color:var(--accent)}.lead{color:var(--muted);font-size:1.12rem;max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:12px;font-weight:750;border:1px solid var(--line)}.primary{background:var(--accent);color:#07131a;border-color:transparent}.secondary{background:#ffffff08}.portrait{min-height:330px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#1d3851,#18223b 55%,#243c4c);display:grid;place-items:center;position:relative;overflow:hidden}.portrait:before,.portrait:after{content:"";position:absolute;border:1px solid #ffffff18;border-radius:50%;width:270px;height:270px}.portrait:after{width:360px;height:360px}.initials{width:145px;height:145px;border-radius:42px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0a1721;font-size:3rem;font-weight:900;box-shadow:0 22px 70px #0005;z-index:1;transform:rotate(-5deg)}.hint{position:absolute;bottom:20px;color:#d4deeb;font-size:.85rem;z-index:1}
+    section{padding:58px 0}.section-head{margin-bottom:26px}.section-head .eyebrow{margin-bottom:8px}.section-head h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:0 0 10px}.section-head p{color:var(--muted);margin:0;max-width:680px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:24px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#ffffff0b,#ffffff04)}.card .icon{font-size:1.5rem}.card h3{margin:10px 0 6px}.card p{color:var(--muted);margin:0}.about{display:grid;grid-template-columns:.75fr 1.25fr;gap:26px}.quote{border-radius:22px;padding:28px;background:linear-gradient(135deg,#173e48,#1a2b4b);font-size:1.25rem;font-weight:700}.aboutcopy{color:var(--muted)}.contact{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:30px;border:1px solid var(--line);border-radius:22px;background:#ffffff08}.contact h3{font-size:1.6rem;margin:0 0 6px}.contact p{margin:0;color:var(--muted)}footer{padding:30px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:50px}.footerrow{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.note{font-size:.82rem;color:#91a0b8;margin-top:14px}
+    body.english .ta{display:none} body:not(.english) .en{display:none}
+    @media(max-width:760px){.navlinks a{display:none}.hero{grid-template-columns:1fr;padding:48px 0 55px;gap:28px}.portrait{min-height:230px}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.hero h1{letter-spacing:-1px}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">Palanivel<span>.</span></a>
+      <div class="navlinks">
+        <a href="#about"><span class="ta">என்னைப் பற்றி</span><span class="en">About</span></a>
+        <a href="#interests"><span class="ta">ஆர்வங்கள்</span><span class="en">Interests</span></a>
+        <a href="#contact"><span class="ta">தொடர்பு</span><span class="en">Contact</span></a>
+      </div>
+      <button class="lang" id="langBtn" type="button" aria-label="Change language">English</button>
+    </nav>
+  </header>
+  <main>
+    <section class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow"><span class="ta">என் தனிப்பட்ட இணையதளம்</span><span class="en">My personal website</span></div>
+        <h1><span class="ta">வணக்கம், நான்</span><span class="en">Hello, I'm</span><br><span>Palanivel<br class="mobile-break"> Manickam</span></h1>
+        <p class="lead ta">என் உலகத்திற்கு வரவேற்கிறேன். எனது அறிமுகம், ஆர்வங்கள் மற்றும் என்னுடன் தொடர்புகொள்வதற்கான தகவல்களை இங்கே பகிர்கிறேன்.</p>
+        <p class="lead en">Welcome to my corner of the web. This is where I share a little about myself, my interests, and ways to get in touch.</p>
+        <div class="actions">
+          <a class="btn primary" href="#about"><span class="ta">என்னைப் பற்றி அறிய</span><span class="en">Get to know me</span></a>
+          <a class="btn secondary" href="#contact"><span class="ta">தொடர்பு கொள்ள</span><span class="en">Contact me</span></a>
+        </div>
+      </div>
+      <div class="portrait" aria-label="Initials PM profile artwork">
+        <div class="initials">PM</div>
+        <div class="hint"><span class="ta">Palanivel Manickam</span><span class="en">A little about me</span></div>
+      </div>
+    </section>
+    <section class="wrap" id="about">
+      <div class="section-head">
+        <div class="eyebrow"><span class="ta">அறிமுகம்</span><span class="en">Introduction</span></div>
+        <h2><span class="ta">என்னைப் பற்றி</span><span class="en">About me</span></h2>
+        <p class="ta">என்னைப் பற்றிய சில வார்த்தைகள்.</p><p class="en">A simple introduction to who I am.</p>
+      </div>
+      <div class="about">
+        <div class="quote"><span class="ta">“ஒவ்வொரு நாளும் புதிதாகக் கற்றுக்கொண்டு, நல்லதைச் செய்ய முயற்சிப்போம்.”</span><span class="en">“Keep learning, keep growing, and try to make a positive difference.”</span></div>
+        <div class="aboutcopy">
+          <p class="ta">நான் Palanivel Manickam. இந்த இணையதளம் எனது தனிப்பட்ட அறிமுகத்திற்காக உருவாக்கப்பட்டுள்ளது. எனது வாழ்க்கை, ஆர்வங்கள், பணிகள் மற்றும் சாதனைகள் பற்றிய விவரங்களை இங்கே பின்னர் சேர்த்துக்கொள்ளலாம்.</p>
+          <p class="en">I'm Palanivel Manickam. This website is a personal space to introduce myself. I can add more details about my background, interests, work, and achievements here over time.</p>
+          <p class="ta">இந்தப் பக்கத்தை உங்கள் புகைப்படம், சமூக வலைத்தள இணைப்புகள் மற்றும் தொடர்பு விவரங்களுடன் தனிப்பயனாக்கலாம்.</p>
+          <p class="en">You can personalize this page with your photo, social links, and contact details.</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrap" id="interests">
+      <div class="section-head">
+        <div class="eyebrow"><span class="ta">எனது உலகம்</span><span class="en">My world</span></div>
+        <h2><span class="ta">ஆர்வங்கள் & நோக்கங்கள்</span><span class="en">Interests & goals</span></h2>
+        <p class="ta">உங்கள் உண்மையான ஆர்வங்களுக்கு ஏற்ப இந்தப் பகுதிகளை மாற்றிக்கொள்ளலாம்.</p>
+        <p class="en">These sections are easy to adapt to your own interests and goals.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="icon">🌱</div><h3><span class="ta">கற்றல் & வளர்ச்சி</span><span class="en">Learning & growth</span></h3><p class="ta">புதிய திறன்களைக் கற்றுக்கொண்டு தொடர்ந்து முன்னேறுதல்.</p><p class="en">Learning new skills and continuing to grow.</p></article>
+        <article class="card"><div class="icon">🤝</div><h3><span class="ta">மக்களுடன் இணைதல்</span><span class="en">Community</span></h3><p class="ta">மரியாதை, ஒத்துழைப்பு மற்றும் நல்ல உறவுகளை மதித்தல்.</p><p class="en">Valuing respect, collaboration, and meaningful connections.</p></article>
+        <article class="card"><div class="icon">✨</div><h3><span class="ta">புதிய முயற்சிகள்</span><span class="en">New ideas</span></h3><p class="ta">புதிய யோசனைகளை முயற்சி செய்து நல்ல மாற்றத்தை உருவாக்குதல்.</p><p class="en">Exploring ideas and working toward positive change.</p></article>
+      </div>
+    </section>
+    <section class="wrap" id="contact">
+      <div class="contact">
+        <div><h3><span class="ta">தொடர்பில் இருப்போம்</span><span class="en">Let's connect</span></h3><p class="ta">உங்கள் மின்னஞ்சல் அல்லது சமூக வலைத்தள இணைப்புகளை இங்கே சேர்க்கலாம்.</p><p class="en">Add your email address or social media links here.</p></div>
+        <a class="btn primary" href="mailto:hello@example.com" id="emailLink"><span class="ta">மின்னஞ்சல்</span><span class="en">Email me</span> ↗</a>
+      </div>
+      <p class="note ta">குறிப்பு: hello@example.com என்பது மாதிரி முகவரி. வெளியிடுவதற்கு முன் உங்கள் உண்மையான மின்னஞ்சலை மாற்றவும்.</p>
+      <p class="note en">Note: hello@example.com is a placeholder. Replace it with your real email before publishing.</p>
+    </section>
+  </main>
+  <footer><div class="wrap footerrow"><span>© <span id="year"></span> Palanivel Manickam</span><span><span class="ta">அன்புடன் உருவாக்கப்பட்டது</span><span class="en">Made with care</span></span></div></footer>
+  <script>
+    const btn = document.getElementById('langBtn');
+    btn.addEventListener('click', () => {
+      const english = !document.body.classList.contains('english');
+      document.body.classList.toggle('english', english);
+      btn.textContent = english ? 'தமிழ்' : 'English';
+      document.documentElement.lang = english ? 'en' : 'ta';
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
